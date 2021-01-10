@@ -15,9 +15,13 @@ There are hackier ways to do this, but here we want to maintain the product vari
 
 /* You'll have to find the product variant <select> drop down which might look like this and take a note of the identifier after id=" in this case it is "SingleOptionSelector-0". */
 
-<select class="single-option-selector single-option-selector-product-template product-form__input"
-    id="SingleOptionSelector-0"
-    data-index="option1">
-      <option value="Back" selected="selected">Black</option>
-      <option value="White">White</option>
-  </select>
+<div class="product-form__controls-group">
+     <div class="selector-wrapper js product-form__item">
+         <select class="single-option-selector single-option-selector-product-template product-form__input"
+            id="SingleOptionSelector-0"
+            data-index="option1">
+              <option value="Back" selected="selected">Black</option>
+              <option value="White">White</option>
+         </select>
+     </div>
+</div>
