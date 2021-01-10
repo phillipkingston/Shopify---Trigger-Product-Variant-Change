@@ -8,9 +8,11 @@ You need jQuery in your Shopify theme, if you don't already have it, insert this
 
 /* 
 
-We need to hook into the change event for the input <select> which is Debut themes default way of change product variants. 
+We need to hook into the change event for the input <select> which is Debut themes default way of changing product variants. 
 
-You can't use "standard" jQuery triggers reliably e.g. .change() or .trigger("change") as this will not trigger the change event on the <select>. There are deep reasons for this, some of it is covered here: https://stackoverflow.com/questions/25256173/can-i-use-jquery-trigger-with-event-listeners-added-with-addeventlistener
+You can't use "standard" jQuery triggers reliably e.g. .change() or .trigger("change") as this will not trigger the change event on the <select>. 
+There are deep reasons for this, some of it is covered here: 
+https://stackoverflow.com/questions/25256173/can-i-use-jquery-trigger-with-event-listeners-added-with-addeventlistener
 
 So we need to create an authentic change event, then dispatch that event on the <Select>
 
@@ -22,10 +24,12 @@ Note that when we move to raw javascript, in getElementById("") we dot use the #
 
 */ 
 
-jQuery(".Variant_Black").click(function() {
+jQuery(".Variant_Black").click(function() { 
   jQuery("#SingleOptionSelector-0").val("Black");
+  
   jQuery(".Variant_White").css("border","0px");
   jQuery(".Variant_Black").css("border","2px solid #0a4683");
+  
   const event = new Event("change", {
     view: window,
     bubbles: true,
@@ -37,8 +41,10 @@ jQuery(".Variant_Black").click(function() {
 
 jQuery(".Variant_White").click(function() {
   jQuery("#SingleOptionSelector-0").val("White");
+  
   jQuery(".Variant_White").css("border","2px solid #0a4683");
   jQuery(".Variant_Black").css("border","0px");
+  
   const event = new Event("change", {
     view: window,
     bubbles: true,
