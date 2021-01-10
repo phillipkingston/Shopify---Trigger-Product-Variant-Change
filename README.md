@@ -14,7 +14,7 @@ This is very simple to implement:
 
 0. Login to Shopify, Go to Themes -> Actions -> Edit Code
 1. Put the JS into the theme.js file in the Assets folder, make any changes you want.
-2. Put the CSS into the theme.scss.liquid file in the Assets folder, make any changes you want.
+2. Put the CSS into the theme.css file in the Assets folder, make any changes you want.
 3. Adjust your triggering objects in the product-template.liquid file in the Snippets folder from the example provided. These are the 
 color swatches or thumbnail images that you want the user to be able to click on to change the active product variant.
 
