@@ -1,7 +1,7 @@
 # Shopify---Trigger-Product-Variant-Change
-Trigger a product variant change outside of the default select input in Shopify e.g. via a color swatch or thumbnail image.
+Trigger a product variant change outside of the default select input in Shopify e.g. via a color swatch or thumbnail image. Here we're trying to trigger the select change event as though the user actually changed the variant by clicking on the <select> and picking a new variant. We want to maintain the integrity of the change event so that all downstream triggers are also activated e.g. updating inventory levels, availability, and ensuring that the ADd to Cart button adds the active variant selection originating from the swatch or thumbnail.
 
-A few simple lines of code to trigger a change in a product variant on product pages in Shopify. Many projects in the Shopify App Store are a) expensive or b) do not work with the default Shopify Theme in 2021 (Debut) or c) do not work at all. I found it difficult to find a single article on Stack Overflow or other developer community websites that explained how to do this with maximal cross-browser support.
+A few simple lines of code to trigger a change in a product variant on product pages in Shopify from two colour swatches. Many projects in the Shopify App Store are a) expensive or b) do not work with the default Shopify Theme in 2021 (Debut) or c) do not work at all. I found it difficult to find a single article on Stack Overflow or other developer community websites that explained how to do this with maximal cross-browser support.
 
 This is very simple to implement:
 
