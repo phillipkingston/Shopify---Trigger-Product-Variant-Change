@@ -1,2 +1,13 @@
+/* Your swatches or image thumbnails that you want to allow the user to click on to change the current product variant displayed in the media section (product images) and update quantities, etc as well as the behaviour of the Add to Cart button. These are just eaxmples of two color swatches */
+
 <div class="Variant_Black"></div>
 <div class="Variant_White"></div>
+
+/* You'll have to find the product variant <select> drop down which might look like this and take a note of the identifier after id=" in this case it is "SingleOptionSelector-0". */
+
+<select class="single-option-selector single-option-selector-product-template product-form__input"
+    id="SingleOptionSelector-0"
+    data-index="option1">
+      <option value="Back" selected="selected">Black</option>
+      <option value="White">White</option>
+  </select>
