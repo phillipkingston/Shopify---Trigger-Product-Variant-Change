@@ -1,0 +1,28 @@
+/* 
+
+Create example swatches that align with your product variants setup in SHopify. These are just EXAMPLES to demonstrate the Javascript.
+
+*/ 
+
+div.Variant_Black {
+  background-color: #000;
+  width: 30px;
+  height: 30px;
+}
+
+div.Variant_White {
+  background-color: #fff;
+  border: 1px solid #000;
+  width: 30px;
+  height: 30px;
+}
+
+/* 
+Hide the select drop down - only use this once you've finished testing that the solution works for you.
+
+In Debut as of January 2021, this hides the div containing the <select> drop down.
+*/
+
+div.product-form__controls-group div.selector-wrapper {
+  display: none;
+}
